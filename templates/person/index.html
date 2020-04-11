@@ -1,0 +1,82 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css'%}" />
+
+    <script></script>
+  </head>
+
+  <body>
+    <form action="/" method="POST">
+      <div class="container">
+        <br />
+        <div class="'form-group row'">
+          <label class="col-sm-1 col-form-label"></label>
+          <div class="col-sm-4"><h3>Enter Details</h3></div>
+        </div>
+
+        <div class="'form-group row'">
+          <label class="col-sm-2 col-form-label">Name</label>
+          <div class="col-sm-4">{{form.name}}</div>
+        </div>
+
+        <div class="'form-group row'">
+          <label class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-4">{{form.email}}</div>
+        </div>
+        <div class="'form-group row'">
+          <label class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-4">{{form.password}}</div>
+        </div>
+
+        <div class="'form-group row'">
+          <label class="col-sm-2 col-form-label">Student</label>
+          <div class="col-sm-4">{{form.isStudent}}</div>
+        </div>
+
+        <div class="'form-group row'">
+          <label class="col-sm-2 col-form-label">Date of Birth</label>
+          <div class="col-sm-4">{{form.date}}</div>
+        </div>
+
+        <div class="'form-group row'">
+          <label class="col-sm-2 col-form-label">Time and Date</label>
+          <div class="col-sm-4">{{form.datetime}}</div>
+        </div>
+
+        <div class="'form-group row'">
+          <label class="col-sm-2 col-form-label">Age</label>
+          <div class="col-sm-4">{{form.age}}</div>
+        </div>
+
+        <div class="'form-group row'">
+          <label class="col-sm-2 col-form-label">Upload Your CV</label>
+          <div class="col-sm-4">{{form.cv}}</div>
+        </div>
+
+        <div class="'form-group row'">
+          <label class="col-sm-2 col-form-label">Sallary</label>
+          <div class="col-sm-4">{{form.sallry}}</div>
+        </div>
+
+        <div class="'form-group row'">
+          <label class="col-sm-2 col-form-label">Information</label>
+          <div class="col-sm-4">{{form.info}}</div>
+        </div>
+        <div class="'form-group row'">
+          <label class="col-sm-2 col-form-label">Image</label>
+          <div class="col-sm-4">{{form.image}}</div>
+        </div>
+
+        <div class="'form-group row'">
+          <div class="col-sm-4">
+            <button type="submit" class="btn btn-primary" value="Submit" />
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

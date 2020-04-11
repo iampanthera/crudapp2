@@ -1,0 +1,153 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css'%}" />
+
+    <script></script>
+  </head>
+
+  <body>
+    <form action="/person/update/{{person.id}}" method="POST">
+      <div class="container">
+        <br />
+        <div class="'form-group row'">
+          <label class="col-sm-1 col-form-label"></label>
+          <div class="col-sm-4"><h3>Update Details</h3></div>
+        </div>
+
+        <div class="'form-group row'">
+          <label class="col-sm-2 col-form-label">Name</label>
+          <div class="col-sm-4">
+            <input
+              type="text"
+              name="pname"
+              id="id_pname"
+              value="{{person.name}}"
+            />
+          </div>
+        </div>
+
+        <div class="'form-group row'">
+          <label class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-4">
+            <input
+              type="email"
+              name="pemail"
+              id="id_pemail"
+              value="{{person.email}}"
+            />
+          </div>
+        </div>
+        <div class="'form-group row'">
+          <label class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-4">
+            <input
+              type="password"
+              name="password"
+              id="id_password"
+              value="{{person.password}}"
+            />
+          </div>
+        </div>
+
+        <div class="'form-group row'">
+          <label class="col-sm-2 col-form-label">Student</label>
+          <div class="col-sm-4">
+            <input
+              type="checkbox"
+              name="isStudent"
+              id="id_isStudent"
+              value="{{person.isStudent}}"
+            />
+          </div>
+        </div>
+
+        <div class="'form-group row'">
+          <label class="col-sm-2 col-form-label">Date of Birth</label>
+          <div class="col-sm-4">
+            <input
+              type="date"
+              name="date"
+              id="id_date"
+              value="{{person.date}"
+            />
+          </div>
+        </div>
+
+        <div class="'form-group row'">
+          <label class="col-sm-2 col-form-label">Time and Date</label>
+          <input
+            type="datetime"
+            name="timeDate"
+            id="id_timeDate"
+            value="person.timeDate"
+          />
+          <div class="col-sm-4"></div>
+        </div>
+
+        <div class="'form-group row'">
+          <label class="col-sm-2 col-form-label">Age</label>
+          <div class="col-sm-4">
+            <input
+              type="number"
+              name="age"
+              id="id_age"
+              value="{{person.age}}"
+            />
+          </div>
+        </div>
+
+        <div class="'form-group row'">
+          <label class="col-sm-2 col-form-label">Upload Your CV</label>
+          <div class="col-sm-4">
+            <input type="file" name="cv" id="id_cv" value="{{person.cv}}" />
+          </div>
+        </div>
+
+        <div class="'form-group row'">
+          <label class="col-sm-2 col-form-label">Sallary</label>
+          <div class="col-sm-4">
+            <input
+              type="number"
+              name="sallary"
+              id="id_sallary"
+              value="{{person.sallary}}"
+            />
+          </div>
+        </div>
+
+        <div class="'form-group row'">
+          <label class="col-sm-2 col-form-label">Information</label>
+          <div class="col-sm-4">
+            <input
+              type="text"
+              name="info"
+              id="id_info"
+              value="{{person.info}}"
+            />
+          </div>
+        </div>
+        <div class="'form-group row'">
+          <label class="col-sm-2 col-form-label">Image</label>
+          <div class="col-sm-4">
+            <input
+              type="image"
+              name="image"
+              id="id_image"
+              value="{{person.image}}"
+            />
+          </div>
+        </div>
+
+        <div class="'form-group row'">
+          <div class="col-sm-4">
+            <button type="submit" class="btn btn-primary" value="Submit" />
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
