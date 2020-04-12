@@ -17,9 +17,9 @@ from . import views
 from django.urls import path
 
 urlpatterns = [
-    path('',views.person,name='person'),
-    path('person/show',views.show,name='show'),
-    path('person/edit/<int:id>',views.edit,name='edit'),
-    path('person/update/<int:id>',views.update,name='update'),
-    path('person/delete/<int:id>',views.delete,name='delete'), 
+    path('', views.Person, name='person'),
+    path('person/show', views.show, name='show'),
+    path('person/edit/<int:id>', views.edit, name='edit'),
+    path('person/update/<int:id>', views.update, name='update'),
+    path('person/delete/<int:id>', views.delete, name='delete'),
 ]
