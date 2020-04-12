@@ -11,8 +11,8 @@ def Person(request):
             try:
                 form.save()
                 return redirect('show')
-            except:
-                pass    
+            except Exception as e:
+                return HttpResponse("<h1> {error} </h1>".format(error=e.args[0]))
     else:
         form = PersonForm()
     return render(request,'person/index.html',{'form':form})

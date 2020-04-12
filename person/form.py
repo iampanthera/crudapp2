@@ -1,8 +1,9 @@
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 from django import forms
 from person.models import person
 
-class PersonForm(forms.Form):
-    class meta:
+
+class PersonForm(forms.ModelForm):
+    class Meta:
         model = person
-        fields  = "__all__"
+        fields = "__all__"
